@@ -1,0 +1,180 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Victor+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Header */
+
+h1 {
+    color: white;
+    font-family: 'Jost', monospace;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.menu ul {
+    color: white;
+    font-family: 'Jost';
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.menu ul li:hover {
+    color: orange;
+}
+
+/* Taula Periodica */
+
+body {
+    background-color: #222222;
+}
+
+h2 {
+    font-size: small;
+}
+
+.element p {
+    font-weight: bolder;
+}
+
+.taula-periodica {
+    font-family: 'Victor Mono', monospace;
+    color: aliceblue;
+    justify-content: center;
+    padding: 0 75px 0 75px;
+}
+
+.elements {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: column;
+    gap: 7px;
+    text-align: center;
+    color: #222222;
+}
+
+/* BORDER RADIUS */
+
+.lantanids {
+    padding-top: 25px;
+    display: flex;
+    grid-column-start: 1;
+    text-align: center;
+    color: #222222;
+    gap: 25px;
+}
+
+
+.semantics {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+    gap: 7px;
+    width: 68%;
+}
+
+.obsolets {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+    gap: 7px;
+    width: 32%;
+}
+
+
+
+.elements .element:nth-child(8),
+.elements .element:nth-child(42),
+.elements .element:nth-child(48),
+.elements .element:nth-child(54),
+.elements .element:nth-child(60),
+.elements .element:nth-child(66),
+.elements .element:nth-child(72),
+.elements .element:nth-child(78) {
+    grid-row-start: 2;
+}
+
+.elements .element:nth-child(14),
+.elements .element:nth-child(18),
+.elements .element:nth-child(22),
+.elements .element:nth-child(26),
+.elements .element:nth-child(30),
+.elements .element:nth-child(34),
+.elements .element:nth-child(38) {
+    grid-row-start: 4;
+}
+
+.element {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.element:hover {
+    transform: scale(1.1);
+}
+.element.document {
+    background-color: #3dcc00;
+}
+.element.metadades {
+    background-color: #cdcc02;
+}
+.element.agrupacio {
+    background-color: #dcbabb;
+}
+.element.textual {
+    background-color: #f8999b;
+}
+.element.multimedia {
+    background-color: #99ddcc;
+}
+.element.taules {
+    background-color: #76dc88;
+}
+.element.formularis {
+    background-color: #4deecd;
+}
+.element.scripting {
+    background-color: #77ccff;
+}
+.element.interactives {
+    background-color: #6496ee;
+}
+.element.semantiques {
+    background-color: #feff44;
+}
+.element.ideogramatiques {
+    background-color: #f9bb99;
+}
+.element.edicio {
+    background-color: #fac0cb;
+}
+.element.obsoletes {
+    background-color: #9d9d9d;
+}
+
+.element.eliminaElement {
+    background-color: #323232;
+}
+
+.element.prova {
+    background-color: peru;
+    color: red;
+}
+
+.blau {
+    color: cyan;
+}
